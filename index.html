@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio- Hesha Edmon</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill-areas">Technologies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Undergraduate</p>
+            <h1>Hi, I'm <span>Hesha Edmon</span></h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"></div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Results-driven Computer Science undergraduate with a fervent passion for Java<br>and MERN Stack development, dedicated to pushing boundaries and delivering<br> impactful solutions. Continuously striving to enhance my skills and knowledge in<br> software engineering, I am committed to staying at the forefront of technological advancements and adapting to dynamic industry demands. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>MERN Stack </span>Web Development</li>
+                        <li><span> JAVA</span> Development</li>
+                        <li><span> JAVA</span> Development</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>Web Developer </span><br>Freelance</li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>BSc.(Hons) in Computer Science </span><br>University of Westminster</li>
+                        <li><span> Gothami Balika Vidyalaya</span> <br>Colombo-10</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-3"></div>
+            <div class="about-col-4"></div>
+        </div>
+    </div>
+</div>
+
+<div id="skill-areas">
+    <div class="container">
+        <h1 class="sub-title">Technologies</h1>
+        <div class="skill-area">
+            <h2>Frontend Development</h2>
+            <br>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <!-- Add more frontend skills if needed -->
+            </ul>
+        </div>
+        <div class="skill-area">
+            <h2>Backend Development</h2>
+            <br>
+            <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+
+                <!-- Add more backend skills if needed -->
+            </ul>
+        </div>
+        <div class="skill-area">
+            <h2>Full Stack Development</h2>
+            <br>
+            <ul>
+                <li>MERN Stack</li>
+
+                <!-- Add more full stack skills if needed -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <br>
+        <div class="project">
+            <h2>Effisync-Productivity Tracking Application</h2>
+            <p>Description of Project 1.</p>
+            <a href="https://github.com/KA909/EffiSync-CS99">View Project</a>
+        </div>
+        <div class="project">
+            <h2>Customer-Management-System--Node.js-MySQL</h2>
+            <p>Description of Project 1.</p>
+            <a href="https://github.com/heshaaa5/Customer-Management-System--Node.js-MySQL">View Project</a>
+        </div>
+        <div class="project">
+            <h2>Sugar Sprinkles Bakery</h2>
+            <p>Description of Project 2.</p>
+            <a href="https://github.com/heshaaa5/SugarSprinklesBakery">View Project</a>
+        </div>
+        <div class="project">
+            <h2>Future-Sales-Forecast-project</h2>
+            <p>Description of Project 2.</p>
+            <a href="https://github.com/heshaaa5/Future-Sales-Forecast-project">View Project</a>
+        </div>
+        <div class="project">
+            <h2>Shopping-Management-System-Java-Swing</h2>
+            <p>Description of Project 2.</p>
+            <a href="https://github.com/heshaaa5/Shopping-Management-System-Java-Swing">View Project</a>
+        </div>
+        <div class="project">
+            <h2>Cafe-Management-System-Java</h2>
+            <p>Description of Project 2.</p>
+            <a href="https://github.com/heshaaa5/Cafe-Management-System-Java-OOP-">View Project</a>
+        </div>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/hesha-edmon-64b63a252/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/heshaaa5" target="_blank">GitHub</a></li>
+            <li>Email: heshahedmon@gmail.com</li>
+            <li>Phone: +94 71 702 4743</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname) {
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");
+    }
+</script>
+</body>
+</html>
